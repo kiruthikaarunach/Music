@@ -1,0 +1,54 @@
+.about-me {
+  text-align: center;
+  margin: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-me h1 {
+  color: #282c34;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  max-width: 800px; /* Set a max width for the carousel container */
+  margin: 0 auto; /* Center the container */
+}
+
+.carousel .slide img {
+  width: 100%;
+  height: auto; /* Adjust height to maintain aspect ratio */
+  max-height: 400px; /* Set a max height to keep images within bounds */
+  object-fit: contain; /* Ensure the images cover the container while maintaining aspect ratio */
+  object-position: center; /* Center the image */
+  border-radius: 5px;
+}
+
+.carousel .legend {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+}
+
+.carousel .control-arrow {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel .control-next.control-arrow:before,
+.carousel .control-prev.control-arrow:before {
+  border-top-color: white;
+  border-right-color: white;
+}
