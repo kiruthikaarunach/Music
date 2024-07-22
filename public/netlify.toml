@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build" # or whatever your build command is
-  publish = "build"         # the directory to publish (typically 'build' for Create React App)
+  command = "CI='' npm run build"
+  publish = "/build"
+  base ="/"
 
 [[redirects]]
   from = "/*"
