@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build" # or whatever your build command is
+  publish = "build"         # the directory to publish (typically 'build' for Create React App)
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
