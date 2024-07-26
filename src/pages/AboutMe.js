@@ -15,7 +15,7 @@ const AboutMe = () => {
           <div className="guru-column">
             {/* <div className="left-column"> */}
               <img
-                src={`${process.env.PUBLIC_URL}/Linkedin-pic.jpg`}
+                src={`${process.env.PUBLIC_URL}/Kiruthika-singer.jpg`}
                 alt="Guru 1"
                 className="guru-image"
               />
@@ -39,140 +39,46 @@ const AboutMe = () => {
           {/* </div> */}
         </div>
 
-        {/* Fourth section */}
-        <div className="guru-section">
+   
+         {/* Fourth section */}
+         <div className="guru-section">
           {/* Left column for descriptions */}
           <div className="guru-column">
             {/* <div className="right-column"> */}
             <div className="centered-text">
-
               <i className="fas fa-music"></i>
-              Kiruthika Arunachalam is currently learning carnatic music from Dr.Shyamala Vinod for the past 8 years and had always been learning music from her childhood. 
+              Dr. Shyamala gives voice training for leading playback singers and Super Singers. Kiruthika Arunachalam is currently learning carnatic music from Dr.Shyamala Vinod for the past 8 years and had always been learning music from her childhood.
               <i className="fas fa-heart"></i>
+              </div>
             {/* </div> */}
-            </div>
           </div>
 
           {/* Right column for photos */}
           <div className="guru-column">
             {/* <div className="left-column"> */}
               <img
+                src={`${process.env.PUBLIC_URL}/Guru.jpg`}
+                alt="Guru 2"
+                className="guru-image-2"
+              />
+               <img
+                src={`${process.env.PUBLIC_URL}/Guru-award.jpg`}
+                alt="Guru 2"
+                className="guru-image-2"
+              />
+               <img
                 src={`${process.env.PUBLIC_URL}/Shyamalamam.jpg`}
                 alt="Guru 2"
-                className="guru-image"
+                className="guru-image-1"
               />
+            
             {/* </div> */}
           </div>
         </div>
-         {/* Fourth section */}
-         <div className="guru-section">
-          {/* Left column for descriptions */}
-          <div className="guru-column">
-            <div className="right-column">
-              <i className="fas fa-music"></i>
-              Dr. Shyamala gives voice training for leading playback singers and Super Singers.
-              <i className="fas fa-heart"></i>
-            </div>
-          </div>
-
-          {/* Right column for photos */}
-          <div className="guru-column">
-            <div className="left-column">
-              <img
-                src={`${process.env.PUBLIC_URL}/Guru.jpg`}
-                alt="Guru 2"
-                className="guru-image"
-              />
-            </div>
-          </div>
-        </div>
-
-        
-        {/* Fourth section */}
-        <div className="guru-section">
-          {/* Left column for descriptions */}
-          <div className="guru-column">
-            <div className="right-column">
-              <i className="fas fa-music"></i>
-              Kiruthika Arunachalam is currently learning carnatic music from Dr.Shyamala Vinod for the past 8 years and had always been learning music from her childhood. 
-              <i className="fas fa-heart"></i>
-            </div>
-          </div>
-
-          {/* Right column for photos */}
-          <div className="guru-column">
-            <div className="left-column">
-              <img
-                src={`${process.env.PUBLIC_URL}/Guru-award.jpg`}
-                alt="Guru 2"
-                className="guru-image"
-              />
-            </div>
-          </div>
-        </div>
-         {/* Fourth section */}
-         <div className="guru-section">
-          {/* Left column for descriptions */}
-          <div className="guru-column">
-            <div className="right-column">
-              <i className="fas fa-music"></i>
-              Dr. Shyamala gives voice training for leading playback singers and Super Singers.
-              <i className="fas fa-heart"></i>
-            </div>
-          </div>
-
-          {/* Right column for photos */}
-          <div className="guru-column">
-            <div className="left-column">
-              <img
-                src={`${process.env.PUBLIC_URL}/SRSMSuperSingers.jpg`}
-                alt="Guru 2"
-                className="guru-image"
-              />
-            </div>
-          </div>
-        </div>
-      
       
       {/* Fourth section */}
-     
-
+    
       <div className="about-gurus-container">
-        <div className="guru-section">
-          <div className="guru-column">
-            <div className="left-column">
-              <img
-                src={`${process.env.PUBLIC_URL}/Shyamalamam.jpg`}
-                alt="Guru 1"
-                className="guru-image-small"
-              />
-              <img
-                src={`${process.env.PUBLIC_URL}/Guru.jpg`}
-                alt="Guru 2"
-                className="guru-image-small"
-              />
-              <img
-                src={`${process.env.PUBLIC_URL}/Guru-award.jpg`}
-                alt="Guru 3"
-                className="guru-image-small"
-              />
-              <img
-                src={`${process.env.PUBLIC_URL}/SRSMSuperSingers.jpg`}
-                alt="Guru 3"
-                className="guru-image-small"
-              />
-            </div>
-          </div>
-
-          <div className="guru-column">
-            <div className="right-column">
-              <i className="fas fa-music"></i>
-              Kiruthika Arunachalam is currently learning carnatic music from Dr.Shyamala Vinod for the past 8 years and had always been learning music from her childhood. Dr. Shyamala gives voice training for leading playback singers and Super Singers.
-              <i className="fas fa-heart"></i>
-            </div>
-          </div>
-        </div>
-
         {/* Second section */}
         <div className="guru-section">
           {/* Left column for descriptions */}
