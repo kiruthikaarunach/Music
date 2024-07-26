@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
 import AboutMe from './pages/AboutMe'; // Import AboutMe component
 import MediaDesciptionLayout from './pages/MediaDescriptionLayout'; // Import AboutMe component
-
+import ResponsiveGallery from './pages/ResponsiveGallery';
 import MyGallery from './pages/MyGallery';
 import ClassTimings from './pages/ClassTimings';
 import YouTubeRow from './pages/YouTubeRow';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import FontAwesome
+import EditButton from './pages/EditButton';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -61,6 +62,9 @@ function App() {
         </AppBar>
         <TabPanel value={value} index={0}>
           <AboutMe />
+          {/* <ResponsiveGallery /> */}
+          {/* <EditButton/> */}
+
           {/* <MediaDesciptionLayout/> */}
         </TabPanel>
         <TabPanel value={value} index={1}>
