@@ -1,71 +1,28 @@
-/* AboutMe.css
+/*AboutMe.css*/
 
-.about-gurus-container {
-    overflow: hidden; 
-  }
-  
-  .guru-image {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .guru-image:hover {
-    transform: scale(1.1); 
-  }
-  
-  .video-container {
-    position: relative;
-    height: 100%;
-  }
-  
-  .youtube-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .video-overlay {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  
-  .video-overlay:hover .youtube-video {
-    opacity: 0.7; 
-  }
-   */
-
+/* 
    .about-gurus-container {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Adjust this gap as needed */
+    gap: 10px; 
   }
   
   .guru-section {
     display: flex;
     flex-direction: row;
-    gap: 10px; /* Adjust this gap as needed */
+    gap: 10px; 
   }
 
   .guru-column {
     display: flex;
     flex-direction: row;
-    gap: 5px; /* Adjust this gap as needed */
+    gap: 5px; 
   }
   
   .left-column {
     flex-basis: 55%;
     flex-grow: 1;
-    padding-right: 10px; /* Space between left and right columns */
+    padding-right: 10px; 
 
   }
   
@@ -80,8 +37,8 @@
     justify-content: center;
     align-items: center;
     text-rendering: auto;
-    padding: 10px; /* Add padding for better readability */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 5%;
@@ -177,7 +134,7 @@
     position: relative;
     width: 100%;
     height: 100;
-    padding-top: 56.25%; /* 16:9 aspect ratio for responsive video */
+    padding-top: 56.25%; 
     overflow: hidden;
   }
   
@@ -185,5 +142,104 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+  }
+   */
+
+   .about-gurus-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .guru-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .guru-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .left-column {
+    width: 100%;
+  }
+  
+  .right-column {
+    width: 100%;
+    color: #bdd508ed;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+  }
+  
+  .right-column i {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .right-column i:hover {
+    color: #ff4757;
+  }
+  
+  .right-column:hover {
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .guru-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .guru-image-small {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
+  
+  .youtube-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .guru-section {
+      flex-direction: row;
+    }
+    .guru-column {
+      flex-direction: row;
+    }
+    .left-column,
+    .right-column {
+      width: 50%;
+    }
   }
   
