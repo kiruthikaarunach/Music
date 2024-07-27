@@ -30,10 +30,7 @@ const AboutMe = () => {
               <i className="fas fa-music"></i>
               Kiruthika Arunachalam is a Software Professional with 15+ years of IT experience with Fortune companies with a Master's Degree in Computer Science and is currently a Full Stack Java Consultant to Sephora.
             Music has always been her passion and another profession right from her childhood. She values music deeply and respects it as equivalent to God, loving to teach students with great reverence.
-            She learns from eminent Gurus and is very humbled and proud to have such profound mentors. Kiruthika teaches South Indian Carnatic music starting from basic lessons like Sarali, Janta, Dhattu Varisais, and Alankaras in 72 Melakarta ragas and numerous Janya ragas. She also teaches Slokas and Bhajans, which are raga-based in Sanskrit, Hindi, Tamil, and Telugu.
-            In addition, she teaches Geethams, Kritis, and Varnams for advanced levels and loves to teach Indian film music as well.
-            She has performed on TV when she was residing in India. She has done stage performances with playback singers and multiple bands and was part of Lakshman Shruti for some time. She used to do playback recordings for budding music directors for devotional albums and +1 tracks.
-            She is also a mother of 2 beautiful kids.              <i className="fas fa-heart"></i>
+            She learns from eminent Gurus and is very humbled and proud to have such profound mentors.              <i className="fas fa-heart"></i>
             </div>
             </div>
           {/* </div> */}
@@ -47,7 +44,10 @@ const AboutMe = () => {
             {/* <div className="right-column"> */}
             <div className="centered-text">
               <i className="fas fa-music"></i>
-              Dr. Shyamala gives voice training for leading playback singers and Super Singers. Kiruthika Arunachalam is currently learning carnatic music from Dr.Shyamala Vinod for the past 8 years and had always been learning music from her childhood.
+              Kiruthika teaches South Indian Carnatic music starting from basic lessons like Sarali, Janta, Dhattu Varisais, and Alankaras in 72 Melakarta ragas and numerous Janya ragas. She also teaches Slokas and Bhajans, which are raga-based in Sanskrit, Hindi, Tamil, and Telugu.
+            In addition, she teaches Geethams, Kritis, and Varnams for advanced levels and loves to teach Indian film music as well.
+            She has performed on TV when she was residing in India. She has done stage performances with playback singers and multiple bands and was part of Lakshman Shruti for some time. She used to do playback recordings for budding music directors for devotional albums and +1 tracks.
+            Dr. Shyamala gives voice training for leading playback singers and Super Singers. Kiruthika Arunachalam is currently learning carnatic music from Dr.Shyamala Vinod for the past 8 years and had always been learning music from her childhood.
               <i className="fas fa-heart"></i>
               </div>
             {/* </div> */}
@@ -78,7 +78,7 @@ const AboutMe = () => {
       
       {/* Fourth section */}
     
-      {/* <div className="about-gurus-container"> */}
+      <div className="about-gurus-container">
         {/* Second section */}
         <div className="guru-section">
           {/* Left column for descriptions */}
@@ -162,7 +162,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      {/* </div> */}
+      </div>
     </Box>
   );
 };

@@ -164,7 +164,7 @@
     max-height: 500px; /* Set a max height for the scrollable area */
     max-width: 100%; /* Set a max width for the scrollable area */
     overflow: auto; /* Add both vertical and horizontal scrollbars */
-    padding-right: 10px; /* Add padding to prevent scrollbar overlap */
+    padding-right: 5px; /* Add padding to prevent scrollbar overlap */
   }
   
   .guru-column {
@@ -214,7 +214,7 @@
   }
   
   .guru-image {
-    width: 60%;
+    width: 40%;
     max-width: 100%;
     height: auto;
     padding-left: 5px;
@@ -233,7 +233,7 @@
   }
   .guru-image-2 {
     width: 20%;
-    max-width: 20%;
+    max-width: 15%;
     height: auto;
     padding-left: 5px;
     padding-top: 5px;
@@ -242,10 +242,10 @@
   }
   
   .centered-text {
-    padding: 80px;
+    padding: 50px;
     text-align: center;
     color: #bdd508ed;
-    font-size: 1.0rem; /* Adjust the font size as needed */
+    font-size: 0.8rem; /* Adjust the font size as needed */
     word-wrap: break-word; /* Ensure long words break and wrap to the next line */
   }
 

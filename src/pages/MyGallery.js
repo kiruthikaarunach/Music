@@ -3,7 +3,6 @@ import GalleryComponent from '../components/GalleryComponent'; // Adjust relativ
 
 const App = () => {
   const images = [
-   
     {
       src: `${process.env.PUBLIC_URL}/JamesVasanthan.jpg`,
       alt: 'Image 2',
@@ -11,7 +10,6 @@ const App = () => {
       width: 400,
       height: 300
     },
-   
     {
       src: `${process.env.PUBLIC_URL}/Susheelamam2.jpg`,
       alt: 'Image 3',
@@ -103,7 +101,6 @@ const App = () => {
       width: 800,
       height: 600
     },
- 
     {
       src: `${process.env.PUBLIC_URL}/recording.jpg`,
       alt: 'Image 11',
@@ -146,8 +143,6 @@ const App = () => {
       width: 800,
       height: 600
     },
-   
-    
   ];
 
   return (
