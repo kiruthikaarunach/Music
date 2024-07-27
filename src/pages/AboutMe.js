@@ -78,7 +78,7 @@ const AboutMe = () => {
       
       {/* Fourth section */}
     
-      <div className="about-gurus-container">
+      {/* <div className="about-gurus-container"> */}
         {/* Second section */}
         <div className="guru-section">
           {/* Left column for descriptions */}
@@ -162,7 +162,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </Box>
   );
 };
