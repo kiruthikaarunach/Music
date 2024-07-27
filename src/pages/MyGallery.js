@@ -8,16 +8,16 @@ const App = () => {
       src: `${process.env.PUBLIC_URL}/JamesVasanthan.jpg`,
       alt: 'Image 2',
       caption: 'Tamizhosai show with Music Director James Vasanthan',
-      width: 800,
-      height: 600
+      width: 400,
+      height: 300
     },
    
     {
       src: `${process.env.PUBLIC_URL}/Susheelamam2.jpg`,
       alt: 'Image 3',
       caption: 'Album release by Playback singer P.Susheela mam',
-      width: 800,
-      height: 600
+      width: 400,
+      height: 300
     },
     {
       src: `${process.env.PUBLIC_URL}/podhigai-full.jpg`,

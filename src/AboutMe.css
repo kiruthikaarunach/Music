@@ -151,6 +151,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
+    max-height: 500px; /* Set a max height for the scrollable area */
+    max-width: 100%; /* Set a max width for the scrollable area */
+    overflow: auto; /* Add both vertical and horizontal scrollbars */
+    padding-right: 10px; /* Add padding to prevent scrollbar overlap */
   }
   
   .guru-section {
@@ -237,7 +241,8 @@
     padding: 80px;
     text-align: center;
     color: #bdd508ed;
-
+    font-size: 1.0rem; /* Adjust the font size as needed */
+    word-wrap: break-word; /* Ensure long words break and wrap to the next line */
   }
 
   
