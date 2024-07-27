@@ -211,8 +211,8 @@
   }
   
   .guru-image {
-    width: 0%;
-    max-width: 100%;
+    width: 30%;
+    max-width: 50%;
     height: auto;
     padding-left: 5px;
     padding-top: 5px;
