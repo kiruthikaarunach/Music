@@ -30,7 +30,7 @@ const AboutMe = () => {
               <i className="fas fa-music"></i>
               Kiruthika Arunachalam is a Software Professional with 15+ years of IT experience with Fortune companies with a Master's Degree in Computer Science and is currently a Full Stack Java Consultant to Sephora.
             Music has always been her passion and another profession right from her childhood. She values music deeply and respects it as equivalent to God, loving to teach students with great reverence.
-            She learns from eminent Gurus and is very humbled and proud to have such profound mentors.removed scrollbar             <i className="fas fa-heart"></i>
+            She learns from eminent Gurus and is very humbled and proud to have such profound mentors.responsive font size             <i className="fas fa-heart"></i>
             </div>
             </div>
           {/* </div> */}

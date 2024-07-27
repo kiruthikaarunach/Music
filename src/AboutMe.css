@@ -239,12 +239,25 @@
   }
   
   .centered-text {
-    padding: 50px;
+    padding: 10px;
     text-align: center;
     color: #bdd508ed;
-    font-size: 0.8rem; /* Adjust the font size as needed */
     word-wrap: break-word; /* Ensure long words break and wrap to the next line */
+    font-size: calc(0.4rem + 0.4vw); /* Reduced responsive font size */
   }
+  
+  @media (max-width: 768px) {
+    .centered-text {
+      font-size: calc(0.3rem + 0.8vw); /* Smaller screens have slightly larger text */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .centered-text {
+      font-size: calc(0.6rem + 0.4vw); /* Larger screens have slightly smaller text */
+    }
+  }
+  
 
   
   .guru-image-small {
