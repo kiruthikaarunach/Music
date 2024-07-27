@@ -161,10 +161,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-height: 500px; /* Set a max height for the scrollable area */
-    max-width: 100%; /* Set a max width for the scrollable area */
-    overflow: auto; /* Add both vertical and horizontal scrollbars */
-    padding-right: 5px; /* Add padding to prevent scrollbar overlap */
+
   }
   
   .guru-column {
@@ -214,7 +211,7 @@
   }
   
   .guru-image {
-    width: 40%;
+    width: 0%;
     max-width: 100%;
     height: auto;
     padding-left: 5px;
