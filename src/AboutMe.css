@@ -166,8 +166,10 @@
   
   .guru-column {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    /* flex-direction: column;
+    gap: 10px; */
+    flex-wrap: wrap;
+  justify-content: space-around;
   }
   
   .left-column {
@@ -240,14 +242,14 @@
    */
    .guru-image {
     width: 30%;
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     padding: 5px;
   }
   
   .guru-image-1 {
     width: 50%;
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     padding: 5px;
   }
@@ -321,10 +323,10 @@
     height: auto;
   }
   
-  .video-container {
+  /* .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 56.25%; 
     overflow: hidden;
   }
   
@@ -334,7 +336,25 @@
     left: 0;
     width: 100%;
     height: 100%;
-  }
+  } */
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Set a max width for larger screens */
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  flex: 1 1 100%; /* Allow the video container to take full width */
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
   
   
   @media (min-width: 768px) {
@@ -347,6 +367,10 @@
     .left-column,
     .right-column {
       width: 50%;
+    }
+    .video-container {
+      width: 70%;
+      padding-top: 56.25%; /* Maintain aspect ratio */
     }
   }
   

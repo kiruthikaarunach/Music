@@ -94,12 +94,12 @@ const AboutMe = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/Tamizhosai.jpg`}
                 alt="Guru 1"
-                className="guru-image"
+                className="guru-image-1"
               />
               <img
                 src={`${process.env.PUBLIC_URL}/JamesVasanthan-cropped.jpg`}
                 alt="Guru 2"
-                className="guru-image-small"
+                className="guru-image"
               />
               <div className="video-container">
                 <iframe 
