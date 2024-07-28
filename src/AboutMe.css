@@ -253,6 +253,12 @@
     height: auto;
     padding: 5px;
   }
+  .guru-image-1-video {
+    width: 30%;
+    max-width: 70%;
+    height: auto;
+    padding: 5px;
+  }
   
   .guru-image-2 {
     width: 20%;
@@ -343,7 +349,7 @@
   position: relative;
   width: 100%;
   max-width: 600px; /* Set a max width for larger screens */
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 30%; /* 16:9 aspect ratio */
   overflow: hidden;
   flex: 1 1 100%; /* Allow the video container to take full width */
 }
@@ -352,8 +358,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 65%;
+  height: 65%;
 }
   
   
@@ -370,7 +376,7 @@
     }
     .video-container {
       width: 70%;
-      padding-top: 56.25%; /* Maintain aspect ratio */
+      padding-top: 30%; /* Maintain aspect ratio */
     }
   }
   

@@ -84,7 +84,7 @@ const AboutMe = () => {
           <div className="centered-text">
 
               <i className="fas fa-music"></i>
-              She is part of Music Director James Vasanthan's Tamizhosai team and has performed in many shows in India and Canada in his choir. Tamizhosai is a 30-voice Choral Ensemble which sings ancient Tamil poems from Sangam Literature to convey the classical literature to the present generation through popular music.
+              She is part of Music Director James Vasanthan's Tamizhosai team and has performed in many shows in India and Canada in his choir. 
               <i className="fas fa-heart"></i>
             </div>
             </div>
@@ -96,23 +96,40 @@ const AboutMe = () => {
                 alt="Guru 1"
                 className="guru-image-1"
               />
-              <img
-                src={`${process.env.PUBLIC_URL}/JamesVasanthan-cropped.jpg`}
-                alt="Guru 2"
-                className="guru-image"
-              />
-              <div className="video-container">
+            
+              {/* <div className="video-container"> */}
                 <iframe 
-                  className="youtube-video"
+                  className="guru-image-1-video"
                   src="https://www.youtube.com/embed/wZZn1_z1WXU"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-              </div>
+              {/* </div> */}
+            
           </div>
         </div>
+        <div className="guru-section">
+          {/* Left column for descriptions */}
+          <div className="guru-column">
+          <div className="centered-text">
+
+              <i className="fas fa-music"></i>
+              She learnt basics of western classical from James Vasanthan as part of being in Tamizhosai.Tamizhosai is a 30-voice Choral Ensemble which sings ancient Tamil poems from Sangam Literature to convey the classical literature to the present generation through popular music.
+              <i className="fas fa-heart"></i>
+          </div>
+</div>
+          {/* Right column for photos */}
+          <div className="guru-column">
+          <img
+                src={`${process.env.PUBLIC_URL}/JamesVasanthan-cropped.jpg`}
+                alt="Guru 2"
+                className="guru-image"
+              />
+          </div>
+          </div>
+        
 
         {/* Third section */}
         <div className="guru-section">
