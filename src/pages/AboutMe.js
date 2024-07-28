@@ -138,7 +138,7 @@ const AboutMe = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/Vandana-Srinivasan.jpg`}
                 alt="Guru 1"
-                className="guru-image"
+                className="guru-image-1"
               />
           </div>
 
@@ -169,7 +169,7 @@ const AboutMe = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/keshav-vinod.jpg`}
                 alt="Guru 2"
-                className="guru-image"
+                className="guru-image-1"
               />
           </div>
         </div>
