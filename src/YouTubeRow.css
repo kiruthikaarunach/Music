@@ -1,14 +1,63 @@
 /* src/components/YouTubeRow.css */
+/* 
+.youtube-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+.video-card {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #8c8814; 
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(145deg, #f8f7f9, #f3e5f5); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.video-thumbnail {
+  width: 100%; 
+  height: auto; 
+}
+
+.video-title {
+  font-weight: bold;
+  margin-bottom: 4px; 
+  font-size: 1.1rem; 
+  color: #06010b;
+}
+
+.video-description {
+  line-height: 1.2; 
+  height: 2.4em; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #0a010f; 
+} */
+
+/* src/components/YouTubeRow.css */
 
 .youtube-row-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center; /* Center the cards */
+  padding: 10px; /* Add padding to the container */
 }
 
 .video-card {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding: 10px;
   border: 2px solid #8c8814; /* Dark purple border */
   border-radius: 8px;
@@ -43,4 +92,22 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: #0a010f; /* Medium purple color for description */
+}
+
+@media (min-width: 576px) {
+  .video-card {
+    width: 45%; /* Two cards per row on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .video-card {
+    width: 30%; /* Three cards per row on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .video-card {
+    width: 22%; /* Four cards per row on large screens */
+  }
 }

@@ -29,8 +29,11 @@ const AboutMe = () => {
 
               <i className="fas fa-music"></i>
               Kiruthika Arunachalam is a Software Professional with 15+ years of IT experience with Fortune companies with a Master's Degree in Computer Science and is currently a Full Stack Java Consultant to Sephora.
+            
             Music has always been her passion. She values music deeply and respects it as equivalent to God, loving to teach students with great reverence.
-            She learns from eminent Gurus and is very humbled and proud to have such profound mentors. Kiruthika teaches South Indian Carnatic music starting from basic lessons like Sarali, Janta, Dhattu Varisais, and Alankaras in 72 Melakarta ragas and numerous Janya ragas. She also teaches Slokas and Bhajans, which are raga-based in Sanskrit, Hindi, Tamil, and Telugu.
+            She learns from eminent Gurus and is very humbled and proud to have such profound mentors. 
+            
+            Kiruthika teaches South Indian Carnatic music starting from basic lessons like Sarali, Janta, Dhattu Varisais, and Alankaras in 72 Melakarta ragas and numerous Janya ragas. She also teaches Slokas and Bhajans, which are raga-based in Sanskrit, Hindi, Tamil, and Telugu.
             In addition, she teaches Geethams, Kritis, and Varnams for advanced levels and loves to teach Indian film music as well.
             She has performed on TV when she was residing in India. She has done stage performances with playback singers and multiple bands and had been part of Lakshman Shruti for some time. She used to do playback recordings for budding music directors for devotional albums and +1 tracks.    <i className="fas fa-heart"></i>
             </div>
@@ -84,7 +87,7 @@ const AboutMe = () => {
           <div className="centered-text">
 
               <i className="fas fa-music"></i>
-              She is part of Music Director James Vasanthan's Tamizhosai team and has performed in many shows in India and Canada in his choir. 
+              She has performed in Music Director James Vasanthan's Tamizhosai team  in India and Canada. 
               <i className="fas fa-heart"></i>
             </div>
             </div>
