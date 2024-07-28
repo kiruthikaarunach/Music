@@ -142,8 +142,7 @@
 //   );
 // }
 
-// export default ClassTimings;
-import React from 'react';
+// export default ClassTimings;import React from 'react';
 import { useTable } from 'react-table';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 import { styled } from '@mui/system';
@@ -232,14 +231,14 @@ const data = [
   }
 ];
 
-const flexData = data.map(row => ({
-  day: row.day,
+const flexData = [{
+  day: 'AnyDay',
   groupSinging: 'Flexible',
   venue: 'Online',
   mapLink: ''
-}));
+}];
 
-// Merged data
+// Merged data with a single entry for One on One Classes
 const mergedData = [
   ...data.map(row => ({ ...row, type: 'Group Classes' })),
   ...flexData.map(row => ({ ...row, type: 'One on One Classes' }))
@@ -305,4 +304,3 @@ function ClassTimings() {
 }
 
 export default ClassTimings;
-
