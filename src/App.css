@@ -1,4 +1,3 @@
-
 /* src/App.css */
 /* 
 body {
@@ -24,6 +23,11 @@ body {
   box-shadow: none !important;
 }
 
+.tabs-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; 
+}
+
 .MuiTabs-root {
   display: flex;
   justify-content: center;
@@ -132,7 +136,7 @@ h5 {
   .App {
     padding: 10px;
   }
-  
+
   .MuiTab-root {
     font-size: 0.8rem !important;
   }
@@ -150,9 +154,7 @@ h5 {
   p {
     font-size: 1.1rem;
   }
-} */
-/* src/App.css */
-/* src/App.css */
+} *//* src/App.css */
 
 body {
   background: url('/public/musicaltheme.jpg') no-repeat center center fixed;
@@ -177,11 +179,6 @@ body {
   box-shadow: none !important;
 }
 
-.tabs-container {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* For smooth scrolling on mobile */
-}
-
 .MuiTabs-root {
   display: flex;
   justify-content: center;
@@ -308,4 +305,23 @@ h5 {
   p {
     font-size: 1.1rem;
   }
+}
+
+.tabs {
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tabs::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.tabs::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

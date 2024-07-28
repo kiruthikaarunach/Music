@@ -1,6 +1,8 @@
 
+
+// src/components/App.js
 // import React from 'react';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { BrowserRouter as Router } from 'react-router-dom';
 // import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
 // import AboutMe from './pages/AboutMe';
 // import MediaDesciptionLayout from './pages/MediaDescriptionLayout';
@@ -52,7 +54,14 @@
 //         <AppBar position="static" className="appBar">
 //           <Grid container justifyContent="center">
 //             <Grid item xs={12} md={10}>
-//               <Tabs value={value} onChange={handleChange} aria-label="nav tabs" centered>
+//               <Tabs
+//                 value={value}
+//                 onChange={handleChange}
+//                 aria-label="nav tabs"
+//                 variant="scrollable"
+//                 scrollButtons="auto"
+//                 centered
+//               >
 //                 <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="About Me" {...a11yProps(0)} />
 //                 <Tab icon={<i className="fas fa-user"></i>} label="My Gallery" {...a11yProps(1)} />
 //                 <Tab icon={<i className="fas fa-clock"></i>} label="Class Timings" {...a11yProps(2)} />
@@ -79,8 +88,6 @@
 // }
 
 // export default App;
-
-// src/components/App.js
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
@@ -133,14 +140,14 @@ function App() {
       <div className="App">
         <AppBar position="static" className="appBar">
           <Grid container justifyContent="center">
-            <Grid item xs={12} md={10}>
+            <Grid item xs={12}>
               <Tabs
                 value={value}
                 onChange={handleChange}
                 aria-label="nav tabs"
                 variant="scrollable"
                 scrollButtons="auto"
-                centered
+                className="tabs"
               >
                 <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="About Me" {...a11yProps(0)} />
                 <Tab icon={<i className="fas fa-user"></i>} label="My Gallery" {...a11yProps(1)} />
