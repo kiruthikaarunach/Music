@@ -35,7 +35,7 @@ const AboutMe = () => {
             
             Kiruthika teaches South Indian Carnatic music starting from basic lessons like Sarali, Janta, Dhattu Varisais, and Alankaras in 72 Melakarta ragas and numerous Janya ragas. She also teaches Slokas and Bhajans, which are raga-based in Sanskrit, Hindi, Tamil, and Telugu.
             In addition, she teaches Geethams, Kritis, and Varnams for advanced levels and loves to teach Indian film music as well.
-            She has performed on TV when she was residing in India. She has done stage performances with playback singers and multiple bands and had been part of Lakshman Shruti for some time. She used to do playback recordings for budding music directors for devotional albums and +1 tracks.    <i className="fas fa-heart"></i>
+            She has performed on TV when she was residing in India. She has done stage performances with playback singers and multiple bands and had been part of Lakshman Shruti for some time. She used to do playback recordings for budding music directors for devotional albums and +1 tracks. test youtube videos   <i className="fas fa-heart"></i>
             </div>
             </div>
           {/* </div> */}
