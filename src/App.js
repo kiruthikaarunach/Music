@@ -81,7 +81,6 @@
 // export default App;
 
 // src/components/App.js
-
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
@@ -135,14 +134,19 @@ function App() {
         <AppBar position="static" className="appBar">
           <Grid container justifyContent="center">
             <Grid item xs={12} md={10}>
-              <div className="tabs-container">
-                <Tabs value={value} onChange={handleChange} aria-label="nav tabs" centered>
-                  <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="About Me" {...a11yProps(0)} />
-                  <Tab icon={<i className="fas fa-user"></i>} label="My Gallery" {...a11yProps(1)} />
-                  <Tab icon={<i className="fas fa-clock"></i>} label="Class Timings" {...a11yProps(2)} />
-                  <Tab icon={<i className="fas fa-youtube"></i>} label="YouTube Videos" {...a11yProps(3)} />
-                </Tabs>
-              </div>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="nav tabs"
+                variant="scrollable"
+                scrollButtons="auto"
+                centered
+              >
+                <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="About Me" {...a11yProps(0)} />
+                <Tab icon={<i className="fas fa-user"></i>} label="My Gallery" {...a11yProps(1)} />
+                <Tab icon={<i className="fas fa-clock"></i>} label="Class Timings" {...a11yProps(2)} />
+                <Tab icon={<i className="fas fa-youtube"></i>} label="YouTube Videos" {...a11yProps(3)} />
+              </Tabs>
             </Grid>
           </Grid>
         </AppBar>
@@ -164,4 +168,3 @@ function App() {
 }
 
 export default App;
-
