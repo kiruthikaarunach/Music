@@ -1,3 +1,4 @@
+
 // import React from 'react';
 // import { useTable } from 'react-table';
 // import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Slide } from '@mui/material';
@@ -16,6 +17,7 @@
 
 //   max-width: 80%; /* Adjust maximum width as needed */
 //   margin: 0 auto; /* Center the table horizontally */
+//   overflow-x: auto; /* Enable horizontal scrolling on small screens */
 // `;
 
 // const StyledTableCell = styled(TableCell)`
@@ -24,6 +26,10 @@
 //   text-align: center;
 //   font-weight: bold;
 //   font-size: 1.1rem; /* Increase font size */
+
+//   @media (max-width: 600px) {
+//     font-size: 0.9rem; /* Adjust font size for smaller screens */
+//   }
 // `;
 
 // const StyledTableRow = styled(TableRow)`
@@ -35,6 +41,10 @@
 
 // const FlexTableCell = styled(TableCell)`
 //   text-align: center;
+
+//   @media (max-width: 600px) {
+//     font-size: 0.8rem; /* Adjust font size for smaller screens */
+//   }
 // `;
 
 // // Data for tables
@@ -135,7 +145,7 @@
 // export default ClassTimings;
 import React from 'react';
 import { useTable } from 'react-table';
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Slide } from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 
 // Styled components for consistent styling
@@ -151,7 +161,6 @@ const StyledTableContainer = styled(TableContainer)`
 
   max-width: 80%; /* Adjust maximum width as needed */
   margin: 0 auto; /* Center the table horizontally */
-  overflow-x: auto; /* Enable horizontal scrolling on small screens */
 `;
 
 const StyledTableCell = styled(TableCell)`
@@ -162,7 +171,7 @@ const StyledTableCell = styled(TableCell)`
   font-size: 1.1rem; /* Increase font size */
 
   @media (max-width: 600px) {
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    display: none; /* Hide header cells on mobile */
   }
 `;
 
@@ -171,14 +180,34 @@ const StyledTableRow = styled(TableRow)`
     background-color: #e0e0e0; /* Light grey background on hover */
   }
   transition: background-color 0.3s;
+
+  @media (max-width: 600px) {
+    display: block; /* Display rows as block elements on mobile */
+    margin-bottom: 20px;
+  }
 `;
 
 const FlexTableCell = styled(TableCell)`
   text-align: center;
 
   @media (max-width: 600px) {
-    font-size: 0.8rem; /* Adjust font size for smaller screens */
+    display: flex; /* Display cells as flex items on mobile */
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.9rem;
   }
+`;
+
+const MobileTableCellLabel = styled(Typography)`
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+`;
+
+const MobileTableCellContent = styled(Typography)`
+  text-align: right;
+  color: #333;
 `;
 
 // Data for tables
@@ -258,15 +287,14 @@ function ClassTimings() {
             {rows.map((row, index) => {
               prepareRow(row);
               return (
-                <Slide direction="up" in={true} mountOnEnter unmountOnExit key={index}>
-                  <StyledTableRow {...row.getRowProps()}>
-                    {row.cells.map(cell => (
-                      <FlexTableCell {...cell.getCellProps()}>
-                        {cell.render('Cell')}
-                      </FlexTableCell>
-                    ))}
-                  </StyledTableRow>
-                </Slide>
+                <StyledTableRow {...row.getRowProps()} key={index}>
+                  {row.cells.map(cell => (
+                    <FlexTableCell {...cell.getCellProps()} key={cell.column.id}>
+                      {/* <MobileTableCellLabel>{cell.column.Header}</MobileTableCellLabel> */}
+                      <MobileTableCellContent>{cell.render('Cell')}</MobileTableCellContent>
+                    </FlexTableCell>
+                  ))}
+                </StyledTableRow>
               );
             })}
           </TableBody>
