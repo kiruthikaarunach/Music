@@ -152,16 +152,13 @@ const CardMedia = styled.div`
   overflow: hidden;
 `;
 
-const Thumbnail = styled.img`
-  width: 100%;
-  height: 100%;
+const Iframe = styled.iframe`
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease-in-out; /* Smooth transition effect */
-  &:hover {
-    transform: scale(1.1); /* Scale up on hover */
-  }
+  width: 100%;
+  height: 100%;
+  border: 0;
 `;
 
 const VideoDetails = styled.div`
@@ -193,16 +190,12 @@ const YouTubeRow = () => {
       {videos.map((video, index) => (
         <CardItem key={index}>
           <CardMedia>
-            <a
-              href={`https://www.youtube.com/watch?v=${video.id}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Thumbnail
-                src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`} // Using YouTube thumbnail URL
-                alt={video.title}
-              />
-            </a>
+            <Iframe
+              src={`https://www.youtube.com/embed/${video.id}`}
+              title={video.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></Iframe>
           </CardMedia>
           <VideoDetails>
             <Title variant="h6" component="div">
