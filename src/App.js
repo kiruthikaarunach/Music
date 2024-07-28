@@ -1,14 +1,15 @@
+
 // import React from 'react';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
-// import AboutMe from './pages/AboutMe'; // Import AboutMe component
-// import MediaDesciptionLayout from './pages/MediaDescriptionLayout'; // Import AboutMe component
+// import AboutMe from './pages/AboutMe';
+// import MediaDesciptionLayout from './pages/MediaDescriptionLayout';
 // import ResponsiveGallery from './pages/ResponsiveGallery';
 // import MyGallery from './pages/MyGallery';
 // import ClassTimings from './pages/ClassTimings';
 // import YouTubeRow from './pages/YouTubeRow';
 // import './App.css';
-// import '@fortawesome/fontawesome-free/css/all.min.css'; // Import FontAwesome
+// import '@fortawesome/fontawesome-free/css/all.min.css';
 // import EditButton from './pages/EditButton';
 
 // function TabPanel(props) {
@@ -23,7 +24,7 @@
 //       {...other}
 //     >
 //       {value === index && (
-//         <Box p={1}> {/* Reduced padding from p={3} to p={1} */}
+//         <Box p={1}>
 //           <Typography>{children}</Typography>
 //         </Box>
 //       )}
@@ -52,7 +53,7 @@
 //           <Grid container justifyContent="center">
 //             <Grid item xs={12} md={10}>
 //               <Tabs value={value} onChange={handleChange} aria-label="nav tabs" centered>
-//                 <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="AboutMe" {...a11yProps(0)} />
+//                 <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="About Me" {...a11yProps(0)} />
 //                 <Tab icon={<i className="fas fa-user"></i>} label="My Gallery" {...a11yProps(1)} />
 //                 <Tab icon={<i className="fas fa-clock"></i>} label="Class Timings" {...a11yProps(2)} />
 //                 <Tab icon={<i className="fas fa-youtube"></i>} label="YouTube Videos" {...a11yProps(3)} />
@@ -62,10 +63,6 @@
 //         </AppBar>
 //         <TabPanel value={value} index={0}>
 //           <AboutMe />
-//           {/* <ResponsiveGallery /> */}
-//           {/* <EditButton/> */}
-
-//           {/* <MediaDesciptionLayout/> */}
 //         </TabPanel>
 //         <TabPanel value={value} index={1}>
 //           <MyGallery />
@@ -86,7 +83,7 @@
 // src/components/App.js
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
 import AboutMe from './pages/AboutMe';
 import MediaDesciptionLayout from './pages/MediaDescriptionLayout';
@@ -138,12 +135,14 @@ function App() {
         <AppBar position="static" className="appBar">
           <Grid container justifyContent="center">
             <Grid item xs={12} md={10}>
-              <Tabs value={value} onChange={handleChange} aria-label="nav tabs" centered>
-                <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="About Me" {...a11yProps(0)} />
-                <Tab icon={<i className="fas fa-user"></i>} label="My Gallery" {...a11yProps(1)} />
-                <Tab icon={<i className="fas fa-clock"></i>} label="Class Timings" {...a11yProps(2)} />
-                <Tab icon={<i className="fas fa-youtube"></i>} label="YouTube Videos" {...a11yProps(3)} />
-              </Tabs>
+              <div className="tabs-container">
+                <Tabs value={value} onChange={handleChange} aria-label="nav tabs" centered>
+                  <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="About Me" {...a11yProps(0)} />
+                  <Tab icon={<i className="fas fa-user"></i>} label="My Gallery" {...a11yProps(1)} />
+                  <Tab icon={<i className="fas fa-clock"></i>} label="Class Timings" {...a11yProps(2)} />
+                  <Tab icon={<i className="fas fa-youtube"></i>} label="YouTube Videos" {...a11yProps(3)} />
+                </Tabs>
+              </div>
             </Grid>
           </Grid>
         </AppBar>
@@ -165,3 +164,4 @@ function App() {
 }
 
 export default App;
+
