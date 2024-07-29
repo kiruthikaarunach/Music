@@ -342,7 +342,7 @@ const flexData = [{
 // Merged data with a single entry for One on One Classes
 const mergedData = [
   ...data.map(row => ({ ...row, type: 'Group Classes' })),
-  ...flexData.map(row => ({ ...row, type: 'One on One Classes' }))
+  ...flexData.map(row => ({ ...row, type: 'Individual Classes' }))
 ];
 
 // Column definitions for react-table
