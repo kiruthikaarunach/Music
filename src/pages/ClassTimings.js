@@ -1,7 +1,6 @@
 
-// import React from 'react';
 // import { useTable } from 'react-table';
-// import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Slide } from '@mui/material';
+// import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 // import { styled } from '@mui/system';
 
 // // Styled components for consistent styling
@@ -17,7 +16,6 @@
 
 //   max-width: 80%; /* Adjust maximum width as needed */
 //   margin: 0 auto; /* Center the table horizontally */
-//   overflow-x: auto; /* Enable horizontal scrolling on small screens */
 // `;
 
 // const StyledTableCell = styled(TableCell)`
@@ -28,7 +26,7 @@
 //   font-size: 1.1rem; /* Increase font size */
 
 //   @media (max-width: 600px) {
-//     font-size: 0.9rem; /* Adjust font size for smaller screens */
+//     display: none; /* Hide header cells on mobile */
 //   }
 // `;
 
@@ -37,14 +35,34 @@
 //     background-color: #e0e0e0; /* Light grey background on hover */
 //   }
 //   transition: background-color 0.3s;
+
+//   @media (max-width: 600px) {
+//     display: block; /* Display rows as block elements on mobile */
+//     margin-bottom: 20px;
+//   }
 // `;
 
 // const FlexTableCell = styled(TableCell)`
 //   text-align: center;
 
 //   @media (max-width: 600px) {
-//     font-size: 0.8rem; /* Adjust font size for smaller screens */
+//     display: flex; /* Display cells as flex items on mobile */
+//     justify-content: space-between;
+//     padding: 8px;
+//     border-bottom: 1px solid #ccc;
+//     font-size: 0.9rem;
 //   }
+// `;
+
+// const MobileTableCellLabel = styled(Typography)`
+//   font-weight: bold;
+//   margin-right: 10px;
+//   color: #333;
+// `;
+
+// const MobileTableCellContent = styled(Typography)`
+//   text-align: right;
+//   color: #333;
 // `;
 
 // // Data for tables
@@ -69,14 +87,14 @@
 //   }
 // ];
 
-// const flexData = data.map(row => ({
-//   day: row.day,
+// const flexData = [{
+//   day: 'AnyDay',
 //   groupSinging: 'Flexible',
 //   venue: 'Online',
 //   mapLink: ''
-// }));
+// }];
 
-// // Merged data
+// // Merged data with a single entry for One on One Classes
 // const mergedData = [
 //   ...data.map(row => ({ ...row, type: 'Group Classes' })),
 //   ...flexData.map(row => ({ ...row, type: 'One on One Classes' }))
@@ -124,15 +142,14 @@
 //             {rows.map((row, index) => {
 //               prepareRow(row);
 //               return (
-//                 <Slide direction="up" in={true} mountOnEnter unmountOnExit key={index}>
-//                   <StyledTableRow {...row.getRowProps()}>
-//                     {row.cells.map(cell => (
-//                       <FlexTableCell {...cell.getCellProps()}>
-//                         {cell.render('Cell')}
-//                       </FlexTableCell>
-//                     ))}
-//                   </StyledTableRow>
-//                 </Slide>
+//                 <StyledTableRow {...row.getRowProps()} key={index}>
+//                   {row.cells.map(cell => (
+//                     <FlexTableCell {...cell.getCellProps()} key={cell.column.id}>
+//                       {/* <MobileTableCellLabel>{cell.column.Header}</MobileTableCellLabel> */}
+//                       <MobileTableCellContent>{cell.render('Cell')}</MobileTableCellContent>
+//                     </FlexTableCell>
+//                   ))}
+//                 </StyledTableRow>
 //               );
 //             })}
 //           </TableBody>
@@ -142,7 +159,9 @@
 //   );
 // }
 
-// export default ClassTimings;import React from 'react';
+// export default ClassTimings;
+
+import React from 'react';
 import { useTable } from 'react-table';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 import { styled } from '@mui/system';
@@ -207,6 +226,27 @@ const MobileTableCellLabel = styled(Typography)`
 const MobileTableCellContent = styled(Typography)`
   text-align: right;
   color: #333;
+`;
+
+const WhatsAppButton = styled('a')`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  &:hover {
+    background-color: #1da851;
+  }
 `;
 
 // Data for tables
@@ -289,7 +329,6 @@ function ClassTimings() {
                 <StyledTableRow {...row.getRowProps()} key={index}>
                   {row.cells.map(cell => (
                     <FlexTableCell {...cell.getCellProps()} key={cell.column.id}>
-                      {/* <MobileTableCellLabel>{cell.column.Header}</MobileTableCellLabel> */}
                       <MobileTableCellContent>{cell.render('Cell')}</MobileTableCellContent>
                     </FlexTableCell>
                   ))}
@@ -299,8 +338,12 @@ function ClassTimings() {
           </TableBody>
         </Table>
       </StyledTableContainer>
+      <WhatsAppButton href="https://wa.me/12269750387" target="_blank" rel="noopener noreferrer">
+        <i className="fab fa-whatsapp"></i>
+      </WhatsAppButton>
     </div>
   );
 }
 
 export default ClassTimings;
+
