@@ -6,9 +6,7 @@ import '../AboutMe.css'; // Import CSS for styling
 const AboutMe = () => {
   return (
     <Box p={2}>
-      {/* <Typography variant="h4" gutterBottom>
-        <i className="fas fa-music"></i>About Me and my Gurus<i className="fas fa-heart"></i>
-      </Typography> */}
+     
 
       <div className="guru-section">
           {/* Left column for photos */}
