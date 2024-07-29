@@ -1,8 +1,10 @@
 
+
 // import React from 'react';
 // import { useTable } from 'react-table';
 // import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 // import { styled } from '@mui/system';
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp'; // Import the WhatsApp icon from @mui/icons-material
 
 // // Styled components for consistent styling
 // const StyledTableContainer = styled(TableContainer)`
@@ -66,25 +68,35 @@
 //   color: #333;
 // `;
 
-// const WhatsAppButton = styled('a')`
-//   position: fixed;
-//   bottom: 20px;
-//   right: 20px;
-//   background-color: #25d366;
-//   color: white;
-//   border-radius: 50%;
-//   width: 50px;
-//   height: 50px;
+// const WhatsAppButtonContainer = styled('div')`
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
+//   margin-top: 20px;
+// `;
+
+// const WhatsAppButton = styled('a')`
+//   display: flex;
+//   align-items: center;
+//   background-color: #25D366;
+//   color: white;
+//   padding: 10px 20px;
+//   border-radius: 25px;
 //   text-decoration: none;
-//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-//   z-index: 1000;
+//   font-size: 1.2rem;
+//   font-weight: bold;
+//   transition: background-color 0.3s;
 
 //   &:hover {
-//     background-color: #1da851;
+//     background-color: #1EBE54;
 //   }
+// `;
+
+// const PhoneNumber = styled(Typography)`
+//   margin-left: 10px;
+//   font-size: 1.2rem;
+//   font-weight: bold;
+//   color: #333;
 // `;
 
 // // Data for tables
@@ -145,6 +157,9 @@
 //     prepareRow
 //   } = useTable({ columns, data: mergedData });
 
+//   const phoneNumber = '+12269750387'; // Your phone number
+//   const whatsappLink = `https://wa.me/${phoneNumber.replace(/\D/g, '')}`;
+
 //   return (
 //     <div style={{ position: 'relative', marginTop: '20px', marginBottom: '20px' }}>
 //       <StyledTableContainer component={Paper}>
@@ -176,9 +191,13 @@
 //           </TableBody>
 //         </Table>
 //       </StyledTableContainer>
-//       <WhatsAppButton href="https://wa.me/12269750387" target="_blank" rel="noopener noreferrer">
-//         <i className="fab fa-whatsapp"></i>
-//       </WhatsAppButton>
+//       <WhatsAppButtonContainer>
+//         <WhatsAppButton href={whatsappLink} target="_blank" rel="noopener noreferrer">
+//           <WhatsAppIcon style={{ marginRight: '10px' }} />
+//           Contact Me
+//         </WhatsAppButton>
+//         <PhoneNumber>{phoneNumber}</PhoneNumber>
+//       </WhatsAppButtonContainer>
 //     </div>
 //   );
 // }
@@ -189,7 +208,8 @@ import React from 'react';
 import { useTable } from 'react-table';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography } from '@mui/material';
 import { styled } from '@mui/system';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp'; // Import the WhatsApp icon from @mui/icons-material
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 // Styled components for consistent styling
 const StyledTableContainer = styled(TableContainer)`
@@ -328,7 +348,12 @@ const columns = [
   { 
     Header: 'Map', 
     accessor: 'mapLink', 
-    Cell: ({ value }) => value ? <a href={value} target="_blank" rel="noopener noreferrer">View Map</a> : 'N/A' 
+    Cell: ({ value }) => value ? (
+      <a href={value} target="_blank" rel="noopener noreferrer">
+        <LocationOnIcon style={{ verticalAlign: 'middle', marginRight: '5px' }} />
+        View Map
+      </a>
+    ) : 'N/A'
   }
 ];
 
@@ -388,3 +413,4 @@ function ClassTimings() {
 }
 
 export default ClassTimings;
+

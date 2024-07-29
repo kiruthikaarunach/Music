@@ -1,6 +1,4 @@
 
-
-// src/components/App.js
 // import React from 'react';
 // import { BrowserRouter as Router } from 'react-router-dom';
 // import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
@@ -53,14 +51,14 @@
 //       <div className="App">
 //         <AppBar position="static" className="appBar">
 //           <Grid container justifyContent="center">
-//             <Grid item xs={12} md={10}>
+//             <Grid item xs={12}>
 //               <Tabs
 //                 value={value}
 //                 onChange={handleChange}
 //                 aria-label="nav tabs"
 //                 variant="scrollable"
 //                 scrollButtons="auto"
-//                 centered
+//                 className="tabs"
 //               >
 //                 <Tab icon={<i className="fas fa-chalkboard-teacher"></i>} label="About Me" {...a11yProps(0)} />
 //                 <Tab icon={<i className="fas fa-user"></i>} label="My Gallery" {...a11yProps(1)} />
@@ -88,6 +86,7 @@
 // }
 
 // export default App;
+
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
@@ -175,3 +174,4 @@ function App() {
 }
 
 export default App;
+
