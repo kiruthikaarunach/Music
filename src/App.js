@@ -90,6 +90,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AppBar, Tabs, Tab, Box, Typography, Grid } from '@mui/material';
+import { Helmet } from 'react-helmet';
 import AboutMe from './pages/AboutMe';
 import MediaDesciptionLayout from './pages/MediaDescriptionLayout';
 import ResponsiveGallery from './pages/ResponsiveGallery';
@@ -134,9 +135,27 @@ function App() {
     setValue(newValue);
   };
 
+  const getTabTitle = () => {
+    switch (value) {
+      case 0:
+        return "About Me";
+      case 1:
+        return "My Gallery";
+      case 2:
+        return "Class Timings";
+      case 3:
+        return "YouTube Videos";
+      default:
+        return "Kiruthika Arunachalam";
+    }
+  };
+
   return (
     <Router>
       <div className="App">
+        <Helmet>
+          <title>{getTabTitle()}</title>
+        </Helmet>
         <AppBar position="static" className="appBar">
           <Grid container justifyContent="center">
             <Grid item xs={12}>
@@ -174,4 +193,3 @@ function App() {
 }
 
 export default App;
-

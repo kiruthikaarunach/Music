@@ -307,6 +307,12 @@ const PhoneNumber = styled(Typography)`
 // Data for tables
 const data = [
   { 
+    day: 'Anyday', 
+    groupSinging: '5:15 PM - 6:00 PM', 
+    venue: 'Online',
+    mapLink: ''
+  },
+  { 
     day: 'Thursday', 
     groupSinging: '5:15 PM - 6:00 PM', 
     venue: '4785 Walker Road, Ontario, Canada',
