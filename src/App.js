@@ -120,7 +120,9 @@ import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import EditButton from './pages/EditButton';
 
-ReactGA.initialize('G-42VXKFR85E');
+// ReactGA.initialize('G-42VXKFR85E');
+ReactGA.initialize('G-42VXKFR85E', { debug: true });
+
 
 function usePageViews() {
   let location = useLocation();
