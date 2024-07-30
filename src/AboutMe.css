@@ -193,3 +193,15 @@
     }
   }
   
+  .responsive-text {
+    font-size: 0.4rem; /* Default font size for larger screens */
+    line-height: 1.5; /* Line height for better readability */
+    margin: 0.5rem 0; /* Margin for spacing */
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-text {
+      font-size: 0.875rem; /* Smaller font size for mobile screens */
+    }
+  }
+  

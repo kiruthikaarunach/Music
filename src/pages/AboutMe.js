@@ -26,12 +26,12 @@ const AboutMe = () => {
             <div className="centered-text">
 
               <i className="fas fa-music"></i>
-             <div><p>Kiruthika Arunachalam is a Software Professional with 15+ years of IT experience with Fortune companies with a Master Degree in Computer Science and is currently a Full Stack Java Consultant to Sephora.</p></div> 
+             <div className="responsive-text"><p>Kiruthika Arunachalam is a Software Professional with 15+ years of IT experience with Fortune companies with a Master Degree in Computer Science and is currently a Full Stack Java Consultant to Sephora.</p></div> 
             
-            <div><p>Music has always been her passion. She values music deeply and respects it equivalent to God, loving to teach students with great reverence.
+            <div className="responsive-text"><p>Music has always been her passion. She values music deeply and respects it equivalent to God, loving to teach students with great reverence.
             She learns from eminent Gurus and is very humbled and proud to have such profound mentors.</p> </div>
             
-            <div><p>Kiruthika teaches South Indian Carnatic music starting from basic lessons like Sarali, Janta, Dhattu Varisais, and Alankaras in 72 Melakarta ragas and numerous Janya ragas. She also teaches Slokas and Bhajans, which are raga-based in Sanskrit, Hindi, Tamil, and Telugu.
+            <div className="responsive-text"><p>Kiruthika teaches South Indian Carnatic music starting from basic lessons like Sarali, Janta, Dhattu Varisais, and Alankaras in 72 Melakarta ragas and numerous Janya ragas. She also teaches Slokas and Bhajans, which are raga-based in Sanskrit, Hindi, Tamil, and Telugu.
             In addition, she teaches Geethams, Kritis, and Varnams for advanced levels and loves to teach Indian film music as well.
             She has performed on TV when she was residing in India. She has done stage performances with playback singers and multiple bands and had been part of Lakshman Shruti for some time. She used to do playback recordings for budding music directors for devotional albums and +1 tracks. </p></div>   <i className="fas fa-heart"></i>
             </div>
