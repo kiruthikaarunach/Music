@@ -148,7 +148,7 @@ const AboutMe = () => {
           <div className="centered-text">
 
               <i className="fas fa-music"></i>
-              She is learning semi-classical music from the very famous Indian playback singer Vandana Srinivasan .She works mainly for the South Indian film industry especially in Tamil, Telugu, and Kannada.She also runs Madras Mehfil , a musical act ,in which she sings variety of genres of Ghazal, Sufi, Devotional, Semi- Classical, Timeless Film Classics & Retro gems across all Indian languages all around the world.
+              She is learning semi-classical music from the very famous Indian playback singer Vandana Srinivasan .Vandana sings for the South Indian film industry especially in Tamil, Telugu, and Kannada.She also runs Madras Mehfil , a musical act ,in which she sings variety of genres of Ghazal, Sufi, Devotional, Semi- Classical, Timeless Film Classics & Retro gems across all Indian languages all around the world.
               <i className="fas fa-heart"></i>
           </div>
           </div>
