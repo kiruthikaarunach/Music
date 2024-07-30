@@ -3,13 +3,7 @@ import GalleryComponent from '../components/GalleryComponent'; // Adjust relativ
 
 const App = () => {
   const images = [
-    {
-      src: `${process.env.PUBLIC_URL}/JamesVasanthan.jpg`,
-      alt: 'Image 2',
-      caption: 'Tamizhosai show with Music Director James Vasanthan',
-      width: 400,
-      height: 300
-    },
+
     {
       src: `${process.env.PUBLIC_URL}/Susheelamam2.jpg`,
       alt: 'Image 3',
